@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    width: 100vw;
+}
+
+
+
+/* Nav Styling part  */
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    /* border:5px solid red; */
+    font-weight: 600;
+}
+nav ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+/* Logo  */
+.brand{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.brand img{
+    width:30px;
+    margin: 0 10px;
+}
+.brand span {
+    font-size: 14px;
+    color:white;
+}
+
+
+/* Songs List */
+.container{
+    min-height: 80vh;
+    width: 70%;
+    color:white;
+    margin:5px  auto;
+    background-color: black;
+    background-image: url("./bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.container h3 {
+    padding: 10px 10px;
+}
+.songs_List{
+    width:40%;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.song{
+    background-color: white;
+    display: flex;
+    color:black;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 14px;
+    height: 2.3rem;
+    margin:5px 0;
+}
+.logo{
+    width:35px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+.song_p{
+    margin-right: 5px;
+}
+.song_p i{
+    cursor: pointer;
+}
+
+/* Play | Pause Container */
+.bottom{
+    /* border:1px solid black; */
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    bottom:0;
+}
+
+
+
+#song_Time_Display{
+    width:75%;
+    margin-bottom: 8px;
+}
+.icons{
+    font-weight: 900;
+    color:antiquewhite;
+}
+.icons i{
+    font-size: 25px;
+    cursor: pointer;
+}
+#song_Info{
+    color:white;
+    position: absolute;
+    left:15vw;
+    top:5vh;
+}
